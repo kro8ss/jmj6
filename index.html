@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت وظایف</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 مدیریت وظایف</h1>
+
+        <!-- بخش اضافه کردن -->
+        <div class="add-section">
+            <input type="text" id="taskInput" placeholder="مثلاً: خرید نان...">
+            <button id="addBtn">➕ افزودن</button>
+        </div>
+
+        <!-- دکمه‌های فیلتر -->
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">همه</button>
+            <button class="filter-btn" data-filter="completed">انجام شده</button>
+            <button class="filter-btn" data-filter="uncompleted">انجام نشده</button>
+        </div>
+
+        <!-- شمارنده -->
+        <div class="counter">
+            <span>همه: <strong id="totalCount">0</strong></span>
+            <span>انجام شده: <strong id="doneCount">0</strong></span>
+            <span>انجام نشده: <strong id="pendingCount">0</strong></span>
+        </div>
+
+        <!-- لیست وظایف -->
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
